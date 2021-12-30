@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap');
+
+$primary-color:#31478F;
+$secondary-color:#ced9fc;
+
+.header{
+    
+    height:100vh;
+    position:relative;
+    
+}
+
+.bgimg{
+    filter:brightness(75%);
+    height:100%;
+    background:url("/homebg.jpg") no-repeat left top;
+    background-size:cover;
+}
+
+.headerText{
+    margin-top:2rem;
+    position:absolute;
+    top:40%;
+    left:40%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.headerText h1{
+    letter-spacing: 2px;
+    padding-top:10rem;
+    width:70%;
+    font-size:4rem;
+}
+.p{
+    line-height:140%;
+    letter-spacing: 1px;
+    font-size:1.2rem;
+    width:50%;
+}
+
+.callButton{
+    font-family: 'Roboto', sans-serif;
+    margin-top:2rem;
+    letter-spacing: 2px;
+    font-size:1.2rem;
+    background:rgba(121, 130, 206, 0.3);
+    border:none;
+    padding:1rem 2rem;
+    font-weight:bold;
+    border:2.5px solid $secondary-color;
+    cursor:pointer;
+    color:white;
+    transition:0.5s;
+}
+
+.callButton:hover{
+    background:$secondary-color;
+    color:$primary-color;
+    transition:0.5s;
+}
