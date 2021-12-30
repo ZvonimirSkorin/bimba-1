@@ -1,12 +1,13 @@
+import { ReactChildren } from "react";
 import Navbar from "./navigation";
 
-const Layout =({children})=>{
-    return(
-        <div className="content">
-            <Navbar/>
-            {children}
-        </div>
-    );
-}
+const Layout: React.FC<{ children: any }> = ({ children }) => {
+  return (
+    <div className="content">
+      <Navbar />
+      {children}
+    </div>
+  );
+};
 
 export default Layout;

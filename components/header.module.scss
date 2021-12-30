@@ -7,38 +7,87 @@ $secondary-color:#ced9fc;
     
     height:100vh;
     position:relative;
+   
     
 }
 
+
 .bgimg{
-    filter:brightness(75%);
     height:100%;
+    filter: brightness(0%);
+
+    @media screen and (max-width:600px) {
+        background-position: right;
+    }
     background:url("/homebg.jpg") no-repeat left top;
     background-size:cover;
+    animation: animBg 3s ease forwards 0.2s;
+}
+@keyframes animBg {
+    from{
+        width:100%;
+        filter: brightness(0%);
+
+    }
+    to{
+        width:110%;
+        filter: brightness(75%);
+
+    }
+}
+.BottomShape{
+    
+    position:absolute;
+    bottom:-0.1rem;
+    z-index: 0;
 }
 
 .headerText{
     margin-top:2rem;
     position:absolute;
-    top:40%;
-    left:40%;
-    transform:translate(-50%,-50%);
+    top:10%;
+    left:10%;
+    right: 10%;
     color:white;
     font-family: 'Roboto Slab', serif;
+    @media screen and (min-width:800px) {
+        top:40%;
+    left:40%;
+    transform:translate(-50%,-50%);
+
+    }
+   
 
 }
 
 .headerText h1{
     letter-spacing: 2px;
-    padding-top:10rem;
-    width:70%;
-    font-size:4rem;
+        font-size:2rem;
+        padding-top: 3rem;
+    width: 100%;
+    
+    @media screen and (min-width:1100px) {
+        font-size:3rem;
+        width:80%;
+        padding-top:10rem;
+
+
+    }
+    @media screen and (min-width:1300px) {
+        font-size:4rem;
+
+    }
 }
 .p{
     line-height:140%;
     letter-spacing: 1px;
     font-size:1.2rem;
-    width:50%;
+    width:100%;
+    @media screen and (min-width:1200px) {
+        width:70%;
+
+    }
+   
 }
 
 .callButton{
@@ -48,6 +97,7 @@ $secondary-color:#ced9fc;
     font-size:1.2rem;
     background:rgba(121, 130, 206, 0.3);
     border:none;
+    z-index: 100;
     padding:1rem 2rem;
     font-weight:bold;
     border:2.5px solid $secondary-color;
