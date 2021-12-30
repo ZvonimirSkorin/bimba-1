@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&display=swap');
+
+.Wrapper{
+    @media screen and (min-width:900px) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 1200px;
+        gap:1rem;
+        margin:2rem auto;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 2rem;
+        color:#00000066;
+        font-weight: 600;
+        font-family: Oswald;
+    }
+    p{
+        font-size: 1.2rem;
+        font-family: Lora;
+        color: #666666;
+        font-weight: 600;
+        line-height: 200%;
+    }
+}
