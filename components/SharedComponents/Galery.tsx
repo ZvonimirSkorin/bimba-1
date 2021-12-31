@@ -42,6 +42,7 @@ const Galery: React.FC<{ size: number; data: string[] }> = (props) => {
   return (
     <section ref={inV} style={{ marginTop: `${props.size}px` }} className={styles.CardWrapper}>
       {props.data.map((v, index) => {
+        if (width < 1000 && index > 3) return;
         return (
           <div
             onClick={() => {

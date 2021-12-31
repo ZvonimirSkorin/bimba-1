@@ -1,5 +1,7 @@
+import { Scroller } from "../SharedComponents/Scroller";
 import styles from "./header.module.scss";
 
+const scroller = new Scroller();
 export const AboutHeader: React.FC = () => {
   return (
     <header className={styles.header}>
@@ -12,8 +14,22 @@ export const AboutHeader: React.FC = () => {
         <h2>O nama</h2>
         <p>Zašto je vaš ljubimac u najboljim rukama kod nas?</p>
         <div className={styles.ButtonWrapper}>
-          <button className={styles.callButton}>O nama</button>
-          <button className={styles.callButton}>Usluge</button>
+          <button
+            onClick={() => {
+              Scroller.scrollTo("ONama");
+            }}
+            className={styles.callButton}
+          >
+            O nama
+          </button>
+          <button
+            onClick={() => {
+              Scroller.scrollTo("Usluge");
+            }}
+            className={styles.callButton}
+          >
+            Usluge
+          </button>
         </div>
       </section>
     </header>

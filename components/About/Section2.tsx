@@ -2,7 +2,7 @@ import styles from "./Section2.module.scss";
 import Image from "next/image";
 export const Section2: React.FC = () => {
   return (
-    <div className={styles.Wrapper}>
+    <div id="Usluge" className={styles.Wrapper}>
       <section className={styles.ImgWrapper}>
         <Image alt="" src="/Cat.jpg" layout="fill" height={"100%"} width="100%" objectFit="cover" />
       </section>
