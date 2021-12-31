@@ -5,7 +5,7 @@ export const Section1: React.FC = () => {
     <div className={styles.Wrapper}>
       <article>
         <h2>Donosimo iskustvo</h2>
-        <h1>Pružamo posebnu njegu za svakog psa</h1>
+        <p>Pružamo posebnu njegu za svakog psa</p>
       </article>
       <article>
         <h2>O nama</h2>

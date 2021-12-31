@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Bimba | Početna</title>
+        <title>Bimba | O nama</title>
         <link rel="shortcut icon" href="/bimba.svg" />
       </Head>
 

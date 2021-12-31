@@ -19,7 +19,7 @@ function Navigation() {
   }, []);
 
   return (
-    <nav style={activateScroll ? { backgroundColor: "blue" } : {}} className={styles.nav}>
+    <nav style={activateScroll ? { backgroundColor: "#a9b3d1",transition:"0.5s" } : {transition:"0.5s"}} className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.navContent}>
           <div className={styles.img}>
@@ -30,11 +30,14 @@ function Navigation() {
             <Link href="/">
               <a className={styles.active}>Početna</a>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <a>O nama</a>
             </Link>
             <Link href="/">
               <a>Kontakt</a>
+            </Link>
+            <Link href="/">
+              <a>Galerija</a>
             </Link>
           </div>
         </div>
