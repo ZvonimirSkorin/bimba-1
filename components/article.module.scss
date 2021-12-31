@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&display=swap');
+
 
 $primary-color:#31478F;
 $secondary-color:#ced9fc;
@@ -23,7 +25,17 @@ $secondary-color:#ced9fc;
 
 .section{
     width:50%;
+
+    p{
+        width:80%;
+        font-size: 1.2rem;
+        font-family: Lora;
+        color: #666666;
+        font-weight: 600;
+        line-height: 200%;
+    }
 }
+
 
 .img{
     
@@ -32,4 +44,5 @@ $secondary-color:#ced9fc;
     width:300px;
     border-radius:50%;
     overflow:hidden;
+    color:#a9b3d1;
 }
