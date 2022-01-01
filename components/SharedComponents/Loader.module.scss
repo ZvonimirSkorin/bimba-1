@@ -1,0 +1,78 @@
+.Loader{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: removeAnim 1s ease forwards 5s;
+
+}
+
+.Pawn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    
+}
+
+
+@for $i from 1 through 12 {
+    .Pawn:nth-child(3n + #{$i}) {
+      opacity: 0;
+      animation: WalkingAnim 1.2s ease forwards #{$i*0.1}s infinite;
+    }
+  }
+
+  @keyframes WalkingAnim {
+      50%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+      }
+  }
+
+
+
+  @keyframes removeAnim {
+      to{
+         opacity: 0;
+      }
+  }
+
+
+  .Path{
+      transform: rotate(60deg);
+  }
+
+  @for $i from 1 through 24 {
+    .PawnH:nth-child(3n + #{$i}) {
+      opacity: 0;
+      animation: WalkingAnimH 1.2s ease forwards #{$i*0.1}s ;
+      margin:0.5rem;
+    }
+    .PawnH:nth-child(odd) {
+        transform: translateX(-50px);
+      
+    }
+    .PawnH:nth-child(even) {
+        transform: translateX(50px);
+      
+    }
+  }
+
+  @keyframes WalkingAnimH {
+   40%{
+       opacity: 1;
+      
+
+   }
+   100%{
+       opacity: 0;
+   }
+}
