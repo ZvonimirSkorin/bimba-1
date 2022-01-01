@@ -27,7 +27,7 @@ function Navigation() {
   const router = useRouter();
 
   return (
-    <nav style={activateScroll ? { boxShadow: "0px 0px 15px 0px black", color: "black", backgroundColor: "#EAF6FF" } : {}} className={styles.nav}>
+    <nav style={activateScroll ? { backgroundColor: "#a9b3d1", transition: "0.5s" } : { transition: "0.5s" }} className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.navContent}>
           <div className={styles.img} style={activateScroll ? { height: 100, width: 100 } : { height: 150, width: 150 }}>

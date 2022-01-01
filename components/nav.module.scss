@@ -46,18 +46,20 @@ $secondary-color:#ced9fc;
     text-decoration:none;
     display: inline-block;
   position: relative;
+  transition:0.5s;
 
 }
 
 .navLinks a:hover{
-    color:#738bdb;
+    color:#697fca;
+    transition:0.5s;
 
 }
 
 .navLinks .active{
     
-    
-    color: #738bdb;
+  transition:0.5s;
+    color: #697fca;
 
 }
 

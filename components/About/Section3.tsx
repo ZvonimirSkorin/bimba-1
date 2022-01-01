@@ -18,7 +18,7 @@ export const Section3: React.FC = () => {
         />
       </section>
       <h2 className={styles.h2}>Naši česti prijatelji</h2>
-      <h1 className={styles.h1}>Bimba</h1>
+      <h3 className={styles.h3}>Bimba</h3>
       <Galery size={70} data={new Array(13).fill("./Puppy.jpg")} />
     </div>
   );
