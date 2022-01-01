@@ -1,0 +1,40 @@
+
+.Wrapper{
+    @media screen and (max-width:1000px) {
+        display: none;
+    }
+    position:fixed;
+    width:400px;
+    height: 400px;
+    bottom:0;
+    right:0;
+    z-index: 100000;
+    padding:1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+@keyframes anim {
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.LeftLeg{
+    margin-right: 50px;
+    position:absolute;
+    top:0;
+    left:20%;
+
+}
+
+.RightLeg{
+    margin-left: 50px;
+    position:absolute;
+    top:20%;
+    right:20%;
+}

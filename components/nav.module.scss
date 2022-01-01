@@ -29,6 +29,12 @@ $secondary-color:#ced9fc;
 
 .img{
   padding:1rem 0;
+  transition-duration: 0.8s;
+  position:relative;
+  box-sizing: border-box;
+  padding:2rem;
+  margin:0.5rem 0;
+  
 }
 .navLinks a{
     letter-spacing:2px;

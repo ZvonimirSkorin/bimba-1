@@ -40,7 +40,7 @@ const Galery: React.FC<{ size: number; data: string[] }> = (props) => {
     }
   }, [inView, inView2]);
   return (
-    <section ref={inV} style={{ marginTop: `${props.size}px` }} className={styles.CardWrapper}>
+    <div ref={inV} style={{ marginTop: `${props.size}px` }} className={styles.CardWrapper}>
       {props.data.map((v, index) => {
         if (width < 1000 && index > 3) return;
         return (
@@ -58,7 +58,7 @@ const Galery: React.FC<{ size: number; data: string[] }> = (props) => {
       })}
 
       <LightBoxGalery images={props.data} start_position={indexPosition} start={openLight} />
-    </section>
+    </div>
   );
   function open_light(position: number) {
     setIndexPosition(position);

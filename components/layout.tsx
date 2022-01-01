@@ -7,6 +7,7 @@ const Layout: React.FC<{ children: any }> = ({ children }) => {
     <div className="content">
       <Navbar />
       {children}
+
       <Footer />
     </div>
   );

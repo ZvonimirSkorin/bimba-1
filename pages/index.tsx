@@ -1,30 +1,22 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from "../components/header"
-import Article from "../components/article"
-
-
+import type { NextPage } from "next";
+import Head from "next/head";
+import Header from "../components/header";
+import Article from "../components/article";
+import { WalkingLoader } from "../components/SharedComponents/WalkingLoader";
 
 const Home: NextPage = () => {
   return (
     <>
-    <Head>
-      <title>Bimba | Početna</title>
-      <link rel="shortcut icon" href="/bimba.svg" />
-    </Head>
+      <Head>
+        <title>Bimba | Početna</title>
+        <link rel="shortcut icon" href="/bimba.svg" />
+      </Head>
 
-    <Header/>
+      <Header />
 
-     <Article/>
-
-    
-
-
-
-    
+      <Article />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

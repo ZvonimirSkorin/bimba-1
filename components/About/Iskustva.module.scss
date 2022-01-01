@@ -68,6 +68,13 @@
         font-family: Helvetica;
         font-weight: 200;
     }
+
+    @media screen and (max-width:500px) {
+        justify-content: center;
+    }
+    @media screen and (max-width:1000px) {
+        padding-left: 2rem;
+    }
 }
 
 .h1{
