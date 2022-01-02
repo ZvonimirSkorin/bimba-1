@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Layout from "../components/layout";
 import { HorizontalLoader, Loader } from "../components/SharedComponents/Loader";
+import { WalkingLoader } from "../components/SharedComponents/WalkingLoader";
 import "../styles/stylesheet.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   // kruzni-- <Loader />
   return (
     <Layout>
+      
       <Component {...pageProps} />
     </Layout>
   );

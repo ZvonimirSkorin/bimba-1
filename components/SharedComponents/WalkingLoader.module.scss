@@ -28,7 +28,7 @@
     margin-right: 50px;
     position:absolute;
     top:0;
-    left:20%;
+    left:55%;
 
 }
 
@@ -36,5 +36,9 @@
     margin-left: 50px;
     position:absolute;
     top:20%;
-    right:20%;
+    right:10%;
+}
+
+.svg{
+    transform:rotate(180deg);
 }

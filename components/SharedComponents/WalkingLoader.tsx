@@ -1,8 +1,7 @@
-import { faSpider } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRef } from "react";
 import { useEffect } from "react";
 import styles from "./WalkingLoader.module.scss";
+import Image from "next/image";
 
 export const WalkingLoader: React.FC = () => {
   const leftLeg = useRef<null | HTMLDivElement>(null);
@@ -39,44 +38,44 @@ export const WalkingLoader: React.FC = () => {
         {" "}
         <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
         <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
       </div>
       <div className={styles.ClawWrapper}>
         {" "}
         <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
         <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
       </div>
       <div className={styles.ClawWrapper}>
         {" "}
         <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
         <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
       </div>
       <div className={styles.ClawWrapper}>
         {" "}
         <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
         <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
           {" "}
-          <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
         </div>
       </div>
     </div>

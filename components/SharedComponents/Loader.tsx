@@ -1,6 +1,7 @@
 import { faSpider } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Loader.module.scss";
+import Image from "next/image";
 
 export const Loader: React.FC = () => {
   return (
@@ -9,10 +10,10 @@ export const Loader: React.FC = () => {
         return (
           <span
             key={index}
-            style={{ transform: `translate(${Math.sin(index * (Math.PI / 6)) * 150}px,${Math.cos(index * (Math.PI / 6)) * 150}px)` }}
+            style={{ transform: `translate(${Math.sin(index * (Math.PI / 6)) * 150}px,${Math.cos(index * (Math.PI / 6)) * 150}px)  rotate(${-(index*30)}deg)` }}
             className={styles.Pawn}
           >
-            <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+            <Image src="/sapa90.svg" width={50} height={50} />
           </span>
         );
       })}
@@ -27,7 +28,7 @@ export const HorizontalLoader: React.FC = () => {
         {new Array(24).fill(0).map((v, index) => {
           return (
             <div key={index} className={styles.PawnH}>
-              <FontAwesomeIcon icon={faSpider} width={50} height={50} />
+              <Image src="/sapa.svg" width={50} height={50} />
             </div>
           );
         })}

@@ -108,6 +108,8 @@ $secondary-color:#ced9fc;
 
 .callButton:hover{
     background:$secondary-color;
-    color:$primary-color;
+    color:#333;
     transition:0.5s;
+    transform: scale(1.05);
+    
 }
