@@ -4,6 +4,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
+import Loader from "../components/NavBar/Loader";
+import Items from "./NavBar/Items";
+import { Drawer } from "./NavBar/Drawer";
+import { useWindowWidth } from "@react-hook/window-size";
+import { useMemo } from "react";
 
 const links = [
   { link: "/", label: "Pocetna" },
@@ -13,6 +18,10 @@ const links = [
 
 function Navigation() {
   const [activateScroll, setActivateScroll] = useState(false);
+  const width = useWindowWidth();
+  const iconSize = useMemo(() => {
+    return { width: 50 + width / 30, height: 50 + width / 30 };
+  }, [width]);
   const listenerFunction = useCallback(() => {
     if (window.scrollY > 100) {
       if (!activateScroll) setActivateScroll(true);
@@ -30,7 +39,12 @@ function Navigation() {
     <nav style={activateScroll ? { backgroundColor: "#a9b3d1", transition: "0.5s" } : { transition: "0.5s" }} className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.navContent}>
-          <div className={styles.img} style={activateScroll ? { height: 100, width: 100 } : { height: 150, width: 150 }}>
+          <div
+            className={styles.img}
+            style={
+              activateScroll ? { height: iconSize.height, width: iconSize.width } : { height: iconSize.height * 1.6, width: iconSize.width * 1.6 }
+            }
+          >
             <Image src="/Bimba.svg" alt="" layout="fill" objectFit="contain" />
           </div>
 
@@ -43,8 +57,10 @@ function Navigation() {
               );
             })}
           </div>
+          <Items />
         </div>
       </div>
+      <Loader />
     </nav>
   );
 }

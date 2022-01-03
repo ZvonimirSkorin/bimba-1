@@ -9,10 +9,11 @@
     box-sizing: border-box;
     
     @media screen and (max-width:980px) {
-        padding:10%;
+        margin: 0rem auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width:100%;
     }
     @media screen and (min-width:980px) {
         display: grid;
@@ -28,13 +29,14 @@
     height: 100%;
     min-height: 500px;
     max-height: 800px;
-    border-radius: 1rem;
     box-shadow: 0px 0px 20px 0px rgb(49, 49, 49);
     overflow: hidden;
     top:10.5rem;
 
     @media screen and (min-width:980px) {
         margin-left: -2rem;
+        border-radius: 1rem;
+
     }
 }
 
@@ -63,10 +65,8 @@
 }
 
 .ServiceBox{
-    box-shadow: 0px 0px 25px 0px rgb(100, 100, 100);
-    border-radius: 1rem;
     align-self: center;
-    background-color: #EAF6FF;
+    background-color: lightyellow;
     box-sizing: border-box;
     padding:1rem;
     width:100%;
@@ -90,7 +90,11 @@
         
     }
     @media screen and (min-width:980px) {
+        box-shadow: 0px 0px 25px 0px rgb(100, 100, 100);
+        background-color: #EAF6FF;
+        border-radius: 1rem;
         max-width: 600px;
+        padding:1rem;
 
     }
 }

@@ -9,14 +9,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: removeAnim 1s ease forwards 5s;
+    animation: removeAnim 1s ease forwards 1s;
 
 }
 
 .Pawn{
     position:absolute;
-    top:50%;
-    left:50%;
+    
     
 }
 
@@ -24,7 +23,7 @@
 @for $i from 1 through 12 {
     .Pawn:nth-child(3n + #{$i}) {
       opacity: 0;
-      animation: WalkingAnim 1.2s ease forwards #{$i*0.1}s infinite;
+      animation: WalkingAnim 0.6s ease forwards #{$i*0.05}s infinite;
     }
   }
 

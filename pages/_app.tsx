@@ -1,17 +1,13 @@
 import type { AppProps } from "next/app";
-import { useState } from "react";
-import { useEffect } from "react";
 import Layout from "../components/layout";
-import { HorizontalLoader, Loader } from "../components/SharedComponents/Loader";
-import { WalkingLoader } from "../components/SharedComponents/WalkingLoader";
 import "../styles/stylesheet.scss";
-
+import "@fortawesome/fontawesome-svg-core/styles.css";
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false; /* eslint-disable import/first */
 function MyApp({ Component, pageProps }: AppProps) {
-  //  <HorizontalLoader />
-  // kruzni-- <Loader />
   return (
     <Layout>
-      
       <Component {...pageProps} />
     </Layout>
   );
