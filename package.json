@@ -11,6 +11,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@mui/material": "^5.2.6",
@@ -26,7 +27,8 @@
     "react-image-lightbox": "^5.1.4",
     "react-intersection-observer": "^8.33.1",
     "react-leaflet": "^3.2.2",
-    "sass": "^1.45.1"
+    "sass": "^1.45.1",
+    "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
     "@types/leaflet": "^1.7.8",

@@ -13,10 +13,69 @@
 }
 
 .SVG{
-    position:absolute;
-    top:0;
-    left:0;
+   
     @media screen and (max-width:540px) {
         transform: scaleY(1.1);
+    }
+}
+.FullWrapper{
+width:100%;
+position:absolute;
+top:0;
+left:0;
+}
+.BoxWrapper{
+    color:white;
+    width:100%;
+   @media screen and (max-width:700px) {
+       display: flex;
+       flex-direction: column;
+       gap:2rem;
+   }
+    @media screen and (min-width:700px) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding:3rem;
+        box-sizing: border-box;
+    }
+    @media screen and (min-width:1000px) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding:3rem;
+        box-sizing: border-box;
+    }
+}
+.Box{
+width:100%;
+height: 20rem;
+
+}
+
+.Article{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Lora;
+    font-size: 1.5rem;
+    h3{
+        color:#BCAC9B;
+    }
+    strong{
+        cursor: pointer;
+    }
+}
+
+.TypeWriter{
+    font-family: 1.8rem;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:1000px) {
+        display: none;
+    }
+    @media screen and (min-width:1000px) {
+        font-size: 2rem;
     }
 }
