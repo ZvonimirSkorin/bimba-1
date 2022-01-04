@@ -7,6 +7,7 @@ $secondary-color:#ced9fc;
     padding:0;
     margin:0 auto;
     width:80%;
+    position:relative;
 }
 .nav{
   position:fixed;
@@ -35,6 +36,11 @@ $secondary-color:#ced9fc;
   padding:2rem;
   margin:0.5rem 0;
   
+}
+.navLinks{
+  @media screen and (max-width:1000px) {
+    display: none;
+  }
 }
 .navLinks a{
     letter-spacing:2px;

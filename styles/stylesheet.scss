@@ -32,22 +32,8 @@ html,body
   {width: 850px;
   height: 400px;
   margin: 5% auto;}
-  .table-price
-   { background: $title-color;
-    width: $width-default;
-    height: $height-dafault;
-    margin: 1% 1.5%;
-    border-radius: 10px;
-    float: left;
-    position: relative;
-    box-shadow: 0px 0px 10px $fill-color;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-    &:hover
-     { box-shadow: 5px 5px 5px $fill-color;
-        transform: scale(0.8);
-    }
-}
+ 
+   
 .svg{
     width:100%;
 }
@@ -103,3 +89,6 @@ html,body
         top: 50%;
         display: block;
         position: absolute;}}
+
+
+       
