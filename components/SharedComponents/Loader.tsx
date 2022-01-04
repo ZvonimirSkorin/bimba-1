@@ -10,7 +10,11 @@ export const Loader: React.FC = () => {
         return (
           <span
             key={index}
-            style={{ transform: `translate(${Math.sin(index * (Math.PI / 6)) * 150}px,${Math.cos(index * (Math.PI / 6)) * 150}px)  rotate(${-(index*30)}deg)` }}
+            style={{
+              transform: `translate(${Math.sin(index * (Math.PI / 6)) * 150}px,${Math.cos(index * (Math.PI / 6)) * 150}px)  rotate(${-(
+                index * 30
+              )}deg)`,
+            }}
             className={styles.Pawn}
           >
             <Image src="/sapa90.svg" width={50} height={50} />
@@ -27,8 +31,8 @@ export const HorizontalLoader: React.FC = () => {
       <div className={styles.Path}>
         {new Array(24).fill(0).map((v, index) => {
           return (
-            <div key={index} className={styles.PawnH}>
-              <Image src="/sapa.svg" width={50} height={50} />
+            <div style={index > 100 ? { transform: `rotate(${5 * index}deg)` } : {}} key={index} className={styles.PawnH}>
+              <Image src="/sapa.svg" width={100} height={100} />
             </div>
           );
         })}
