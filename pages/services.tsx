@@ -5,6 +5,7 @@ import styles from "../styles/Service.module.scss";
 import { AboutHeader } from "../components/About/header";
 import { ServicesHeader } from "../components/Services/header";
 import { useState } from "react";
+import { Basket } from "../components/Services/Basket";
 const Home: NextPage = () => {
   const [showPics, setShowPics] = useState(false);
   return (
@@ -35,9 +36,12 @@ const Home: NextPage = () => {
         }}
       />
 
-      <div className={styles.Drawer} style={showPics ? { transform: "translateX(0)" } : {}}>
-        add to box
-      </div>
+      <Basket
+        showPics={showPics}
+        close={() => {
+          setShowPics(false);
+        }}
+      />
     </>
   );
 };

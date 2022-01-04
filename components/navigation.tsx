@@ -14,23 +14,29 @@ const links = [
   { link: "/", label: "Pocetna" },
   { link: "/about", label: "O nama" },
   { link: "/services", label: "Usluge" },
+  { link: "/contact", label: "Kontakt" },
 ];
 
 function Navigation() {
   const [activateScroll, setActivateScroll] = useState(false);
-  const width = useWindowWidth();
-  const iconSize = useMemo(() => {
-    return { width: 50 + width / 30, height: 50 + width / 30 };
-  }, [width]);
+
+  const [iconSize, setIconSize] = useState({ height: 0, width: 0 });
   const listenerFunction = useCallback(() => {
     if (window.scrollY > 100) {
       if (!activateScroll) setActivateScroll(true);
     } else setActivateScroll(false);
   }, []);
+  const resizeListener = useCallback((e) => {
+    let width = window.innerWidth;
+    setIconSize({ width: 50 + width / 30, height: 50 + width / 30 });
+  }, []);
   useEffect(() => {
+    setIconSize({ width: 50 + window.innerWidth / 30, height: 50 + window.innerWidth / 30 });
+    window.addEventListener("resize", resizeListener);
     window.addEventListener("scroll", listenerFunction);
     return () => {
       window.removeEventListener("scroll", listenerFunction);
+      window.removeEventListener("resize", resizeListener);
     };
   }, []);
   const router = useRouter();
@@ -40,6 +46,9 @@ function Navigation() {
       <div className={styles.container}>
         <div className={styles.navContent}>
           <div
+            onClick={() => {
+              router.push("/");
+            }}
             className={styles.img}
             style={
               activateScroll ? { height: iconSize.height, width: iconSize.width } : { height: iconSize.height * 1.6, width: iconSize.width * 1.6 }

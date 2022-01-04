@@ -26,7 +26,7 @@ export const Prices: React.FC<{ openBasket: Function }> = ({ openBasket }) => {
       />
 
       {new Array(3).fill(0).map((v, index) => {
-        return <PriceCard index={index} move={showPics} key={index} />;
+        return <PriceCard index={index} move={false} key={index} />;
       })}
     </div>
   );
