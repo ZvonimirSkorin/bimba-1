@@ -1,13 +1,8 @@
 import { faEnvelope, faMapPin, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dynamic from "next/dynamic";
 import styles from "./ContactInfo.module.scss";
 
 const ContactInfo: React.FC = () => {
-  const Map = dynamic(
-    () => import("../Leaflet/Map"), // replace '@components/map' with your component's location
-    { ssr: false } // This line is important. It's what prevents server-side render
-  );
   return (
     <div className={styles.ContactInfo}>
       <h1 className={styles.H1}>Contact info</h1>
@@ -36,9 +31,6 @@ const ContactInfo: React.FC = () => {
           </div>
         </section>
       </div>
-      <section className={styles.MapWrapper}>
-        <Map ZoomIn={15} open={"Rotterdam"} zIndex={true} koordinate={[{ city: "Bimba", lat: 45.803276648111506, lng: 15.9024145 }]} />
-      </section>
     </div>
   );
 };

@@ -23,7 +23,14 @@ const Map: React.FC<any> = (props) => {
     <MapContainer
       dragging={touchScreen ? false : true}
       center={[props.koordinate[0].lat, props.koordinate[0].lng]}
-      style={{ height: "30rem", maxHeight: "70vh", width: "100%", borderRadius: "1rem", zIndex: props.zIndex ? 1 : -1 }}
+      style={{
+        height: "30rem",
+        maxHeight: "70vh",
+        width: "100%",
+        borderRadius: "1rem",
+        zIndex: props.zIndex ? 1 : -1,
+        boxShadow: "0px 0px 15px 0px black",
+      }}
       zoom={props.ZoomIn ? props.ZoomIn : 6}
       scrollWheelZoom={false}
       whenCreated={setMap}

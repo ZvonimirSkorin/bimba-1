@@ -3,7 +3,10 @@ import styles from "./ContactFormRetro.module.scss";
 
 const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
   return (
-    <div className={styles.Wrapper} style={{ width: "100%", backgroundColor: "rgba(16,25,33,.05)", display: "flex", flexDirection: "column" }}>
+    <div
+      className={styles.Wrapper}
+      style={{ width: "100%", overflow: "hidden", backgroundColor: "#f5f5f5", display: "flex", flexDirection: "column" }}
+    >
       <h1>{title}</h1>
       <TextField
         id="standard-basic"
@@ -31,7 +34,7 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
         style={{ borderColor: "#242A56", color: "#242A56", marginRight: "auto", marginTop: "2rem", zIndex: 10 }}
       >
         Send
-        <div className={styles.hiddenwave} style={{ backgroundColor: "black", color: "white", marginRight: "auto" }}></div>
+        <div className={styles.hiddenWave} style={{ backgroundColor: "black", color: "white", marginRight: "auto" }}></div>
       </div>
     </div>
   );
