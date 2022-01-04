@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/header";
-import Article from "../components/article";
-import Facebook from "../components/facebook";
+import Header from "../components/Index/header";
+import Article from "../components/Index/article";
+import Facebook from "../components/Index/facebook";
+import Services from "../components/Index/services";
+import Gallery from "../components/Index/gallery";
 import { WalkingLoader } from "../components/SharedComponents/WalkingLoader";
 import { Loader } from "../components/SharedComponents/Loader";
 
@@ -20,6 +22,10 @@ const Home: NextPage = () => {
       <Article />
 
       <Facebook/>
+
+      <Services/>
+
+      <Gallery/>
     </>
   );
 };

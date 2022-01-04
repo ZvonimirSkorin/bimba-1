@@ -6,7 +6,7 @@ import styles from "./Items.module.scss";
 const Items: React.FC = () => {
   const [open, setOpen] = useState(false);
   const ItemsList = [
-    { link: "/", label: "Pocetna" },
+    { link: "/", label: "Početna" },
     { link: "/about", label: "O nama" },
     { link: "/services", label: "Usluge" },
     { link: "/contact", label: "Kontakt" },

@@ -21,7 +21,9 @@
     font-size: 1.2rem;
     cursor: pointer;
     transition-duration: 0.3s;
-    &:hover .UnderLine{
+    &:hover 
+    
+    .UnderLine{
         width:100%;
         
     }
@@ -43,6 +45,7 @@
 
 .ItemsWrapper{
         display: none;  
+        
    
  
     
@@ -51,6 +54,7 @@
     @media screen and (min-width:1000px) {
         display: none;   
     }
+    
    
 }
 

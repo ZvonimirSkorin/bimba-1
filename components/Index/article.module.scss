@@ -16,6 +16,11 @@ $secondary-color:#ced9fc;
     font-family: 'Roboto Slab', serif;
     display:flex;
     justify-content: space-between;
+
+    @media screen and (max-width:600px) {
+        flex-direction:column;
+        
+    }
 }
 
 .article h1{
@@ -34,6 +39,23 @@ $secondary-color:#ced9fc;
         font-weight: 600;
         line-height: 200%;
         padding-bottom:2rem;
+
+        @media screen and (max-width:600px) {
+            
+            width:100%;
+            padding-right:2rem;
+            text-align: center;
+            
+    
+            
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        width:100%;
+        
+
+        
     }
 }
 
@@ -48,6 +70,8 @@ $secondary-color:#ced9fc;
     font-size:1.2rem;
     display:inline-block;
     transition:0.5s;
+
+   
     
 }
 

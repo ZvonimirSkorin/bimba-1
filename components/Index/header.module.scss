@@ -17,7 +17,7 @@ $secondary-color:#ced9fc;
     filter: brightness(0%);
 
     @media screen and (max-width:600px) {
-        background-position: right;
+        background-position: center;
     }
     background:url("/homebg.jpg") no-repeat left top;
     background-size:cover;
@@ -47,7 +47,7 @@ $secondary-color:#ced9fc;
     position:absolute;
     top:10%;
     left:10%;
-    right: 10%;
+    
     color:white;
     font-family: 'Roboto Slab', serif;
     @media screen and (min-width:800px) {
