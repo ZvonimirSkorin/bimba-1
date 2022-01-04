@@ -1,0 +1,36 @@
+.Drawer{
+    transition-duration: 0.7s;
+    z-index: 10000;
+     position: fixed;
+      right: 0;
+       height: 100%;
+        top: 0;
+         width: 500px;
+         transform:translateX(100%);
+         max-width: 100%;
+         box-shadow:0px 0px 10px 0px black;
+         background-color: white;
+         padding: 1rem;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+}
+
+.Image{
+   
+   height: 50%;
+  
+}
+
+.Closer{
+    z-index: 10000;
+    position:fixed;
+    transition-duration: 0.7s;
+    top:0;
+    left:0;
+    height: 100%;
+    width:calc(100% - 500px);
+    background-color: rgba(0, 0, 0, 0.514);
+    transform: translateX(-100%);
+}
