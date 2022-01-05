@@ -5,6 +5,7 @@ import Article from "../components/Index/article";
 import Facebook from "../components/Index/facebook";
 import Services from "../components/Index/services";
 import Gallery from "../components/Index/gallery";
+import Testimonials from "../components/Index/testimonials";
 import { WalkingLoader } from "../components/SharedComponents/WalkingLoader";
 import { Loader } from "../components/SharedComponents/Loader";
 
@@ -26,6 +27,8 @@ const Home: NextPage = () => {
       <Services/>
 
       <Gallery/>
+
+      <Testimonials/>
     </>
   );
 };
