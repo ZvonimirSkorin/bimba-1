@@ -18,6 +18,12 @@ $secondary-color:#EAF6FF;
     padding-bottom:10rem;
     background-position:center;
     background-size:cover;
+
+    @media screen and (max-width:600px) {
+        background-position:center;
+        
+
+    }
 }
 
 .gradient{
@@ -52,6 +58,12 @@ $secondary-color:#EAF6FF;
         width:300px;
         padding-bottom:3rem;
         
+    }
+
+    @media screen and (max-width:600px) {
+        
+        
+
     }
 }
 

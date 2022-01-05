@@ -56,6 +56,8 @@
     flex:40%;
     padding:1rem 2rem;
 
+    
+
     h2{
         color:#333;
         padding:0;
@@ -69,8 +71,17 @@
         font-weight:500;
         letter-spacing:1px;
         line-height:180%;
+
         
         
+        
+    }
+
+    @media screen and (max-width:600px) {
+        p{
+            line-height:160%;
+        }
+
     }
 
 }
