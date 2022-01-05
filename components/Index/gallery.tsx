@@ -1,6 +1,7 @@
 import styles from "./gallery.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { LightBoxGalery } from "../SharedComponents/LightBoxGalery";
 
 function Gallery() {
   return (
