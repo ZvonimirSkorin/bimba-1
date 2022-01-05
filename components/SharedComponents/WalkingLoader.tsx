@@ -32,52 +32,5 @@ export const WalkingLoader: React.FC = () => {
       }
     });
   }, []);
-  return (
-    <div className={styles.Wrapper}>
-      <div className={styles.ClawWrapper}>
-        {" "}
-        <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-        <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-      </div>
-      <div className={styles.ClawWrapper}>
-        {" "}
-        <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-        <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-      </div>
-      <div className={styles.ClawWrapper}>
-        {" "}
-        <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-        <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-      </div>
-      <div className={styles.ClawWrapper}>
-        {" "}
-        <div ref={leftLeg} id={`right`} className={styles.LeftLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-        <div ref={rightLeg} id={`righ`} className={styles.RightLeg} style={{ opacity: 1 }}>
-          {" "}
-          <Image src="/sapa.svg" className={styles.svg} width={50} height={50}/>
-        </div>
-      </div>
-    </div>
-  );
+  return <div className={styles.Wrapper}></div>;
 };

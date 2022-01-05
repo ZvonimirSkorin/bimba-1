@@ -30,6 +30,7 @@ export const Drawer: React.FC<recivedProps> = ({ open, setOpen, items }) => {
         {items.map((v, index) => {
           return (
             <div
+              key={index}
               onClick={() => {
                 router.push(v.link);
                 setOpen();

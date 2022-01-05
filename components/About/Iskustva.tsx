@@ -11,7 +11,7 @@ export const Iskustva: React.FC = () => {
       <h2 className={styles.h2}>Komentari naših klijenata</h2>
       <div className={styles.Wrapper}>
         {Komentari.map((v, index) => {
-          return <Comment ime={v.ime} komentar={v.komentar} />;
+          return <Comment key={index} ime={v.ime} komentar={v.komentar} />;
         })}
       </div>
     </div>
@@ -41,8 +41,8 @@ const Comment: React.FC<{ ime: string; komentar: string }> = ({ ime, komentar })
             <path d="M138 0.5H4.5V125L138 0.5Z" stroke="white" />
           </g>
           <defs>
-            <filter id="filter0_d_63_52" x="0" y="0" width="143.269" height="134.15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <filter id="filter0_d_63_52" x="0" y="0" width="143.269" height="134.15" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
               <feOffset dy="4" />
               <feGaussianBlur stdDeviation="2" />

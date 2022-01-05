@@ -48,11 +48,12 @@ const Galery: React.FC<{ size: number; data: string[] }> = (props) => {
             onClick={() => {
               open_light(index);
             }}
+            key={index}
             ref={index === 8 ? ref : null}
             id={`card${index + 1}`}
             className={styles.card}
           >
-            <img className={styles.CardGaleryImg} src={props.data[index]} />
+            <img alt="" className={styles.CardGaleryImg} src={props.data[index]} />
           </div>
         );
       })}

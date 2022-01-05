@@ -3,7 +3,7 @@ export const Repeter: React.FC<{ numOfRepetition: number; children: any; horizon
   return (
     <span style={{ width: "100%", display: "flex" }}>
       {new Array(numOfRepetition).fill(0).map((v, index) => {
-        return <Element children={children} />;
+        return <span key={index}>{children}</span>;
       })}
     </span>
   );
