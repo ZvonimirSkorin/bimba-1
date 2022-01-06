@@ -13,7 +13,7 @@ function Gallery() {
       <div className={styles.container}>
         <div className={styles.galWrapper}>
           <h1 className={styles.h1}>Galerija</h1>
-          {new Array(8).fill(0).map((v, index) => {
+          {slike.map((v, index) => {
             return (
               <div
                 onClick={() => {
@@ -23,7 +23,7 @@ function Gallery() {
                 key={index}
                 className={styles.imgWrap}
               >
-                <Image src={slike[index]} alt="" width={200} height={200} />
+                <Image src={v} alt="" width={200} height={200} />
               </div>
             );
           })}
