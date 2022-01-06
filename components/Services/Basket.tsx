@@ -1,4 +1,5 @@
 import Hamburger from "hamburger-react";
+import { useMemo } from "react";
 import { Picture } from "../SharedComponents/Image";
 import styles from "./Basket.module.scss";
 interface recivedProps {
@@ -25,7 +26,7 @@ export const Basket: React.FC<recivedProps> = ({ showPics, close }) => {
           {" "}
           <Hamburger toggled={true} />
         </span>
-        <Picture src="/Puppy.jpg" style={styles.Image} />
+        <Picture src="/puppy.jpg" style={styles.Image} />
         <h3>Šišanje</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam turpis ante, lobortis sed ultrices scelerisque, auctor et neque. Aliquam nec

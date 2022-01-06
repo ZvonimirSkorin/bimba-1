@@ -9,7 +9,7 @@ export const Section3: React.FC = () => {
         <strong className={styles.BackgroundColor}></strong>
         <Picture
           priority
-          src="/Puppy.jpg"
+          src="/puppy.jpg"
           style={styles.Image}
           svg={
             <svg className={styles.SVG} width="100%" viewBox="0 0 644 70" fill="none" xmlns="http://www.w3.org/2000/svg">
