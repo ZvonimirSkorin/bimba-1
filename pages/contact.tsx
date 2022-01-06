@@ -27,7 +27,7 @@ const Contact: NextPage = () => {
 
         <section className={styles.MapWrapper}>
           <Map ZoomIn={17} open={"Bimba"} zIndex={true} koordinate={[{ city: "Bimba", lat: 45.803276648111506, lng: 15.9024145 }]} />
-          <Picture src="/BimbaShop.jpg" style={styles.Image} />
+          <Picture src="/BimbaShop.JPG" style={styles.Image} />
         </section>
       </div>
     </div>
