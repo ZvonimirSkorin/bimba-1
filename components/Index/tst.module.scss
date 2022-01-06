@@ -22,6 +22,7 @@ $primary-color:#31478F;
     font-size:3rem;
     color:#333;
     padding-bottom:3rem;
+    margin:0;
 
     @media screen and (max-width:600px) {
        padding-top:3rem;
@@ -74,15 +75,6 @@ $primary-color:#31478F;
     
 }
 
-.svg{
-    position:absolute;
-    top:-9.2rem;
-    left:0;
 
-    @media screen and (max-width:600px) {
-        top:-2.2rem;
-        
 
-    }
-}
 

@@ -90,5 +90,13 @@ html,body
         display: block;
         position: absolute;}}
 
+        .carousel button.control-next.control-arrow:before{
+          border-left: 8px solid #333;
+      }
+      
+      .carousel button.control-prev.control-arrow:before {
+        border-right: 8px solid #333;
+    }
+
 
        

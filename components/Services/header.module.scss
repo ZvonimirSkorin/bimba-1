@@ -26,7 +26,8 @@ animation: anim 1s ease forwards;
     @media screen and (max-width:600px) {
         background-position: right;
     }
-    background:url("/homebg.jpg") no-repeat left top;
+    background:url("/services.jpg") no-repeat left top;
+    filter:brightness(0.9);
     background-size:cover;
 }
 

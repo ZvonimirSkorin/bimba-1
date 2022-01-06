@@ -1,4 +1,4 @@
-import styles from "./../About/header.module.scss";
+import styles from "./reserve.module.scss";
 
 export const ReserveHeader: React.FC = () => {
   return (

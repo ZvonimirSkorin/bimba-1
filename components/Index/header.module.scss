@@ -50,9 +50,10 @@ $secondary-color:#ced9fc;
     margin:auto;
     color:white;
     font-family: 'Roboto Slab', serif;
+
     @media screen and (min-width:800px) {
-        top:40%;
-    left:40%;
+        top:50%;
+    left:50%;
     transform:translate(-50%,-50%);
 
     }
@@ -80,6 +81,7 @@ $secondary-color:#ced9fc;
 
     @media screen and (max-width:600px) {
         text-align: center;
+        
         
 
     }

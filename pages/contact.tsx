@@ -12,21 +12,25 @@ const Contact: NextPage = () => {
     { ssr: false } // This line is important. It's what prevents server-side render
   );
   return (
-    <>
+    <div style={{background:"#EAF6FF"}}>
       <Head>
-        <title>Bimba | O nama</title>
+        <title>Kontakt | Bimba</title>
         <link rel="shortcut icon" href="/bimba.svg" />
       </Head>
       <ContactHeader />
-      <section className={styles.ContentWrapper} style={{ backgroundColor: "#f5f5f5" }}>
-        <ContactFormRetro title="Imate pitanje?" />
-        <ContactInfo />
-      </section>
-      <section className={styles.MapWrapper}>
-        <Map ZoomIn={17} open={"Bimba"} zIndex={true} koordinate={[{ city: "Bimba", lat: 45.803276648111506, lng: 15.9024145 }]} />
-        <Picture src="/BimbaShop.jpg" style={styles.Image} />
-      </section>
-    </>
+
+      <div style={{width:"80%",margin:"auto"}}>
+        <section className={styles.ContentWrapper} style={{ backgroundColor: "#EAF6FF" }}>
+          <ContactFormRetro title="Imate pitanje?" />
+          <ContactInfo />
+        </section>
+
+        <section className={styles.MapWrapper}>
+          <Map ZoomIn={17} open={"Bimba"} zIndex={true} koordinate={[{ city: "Bimba", lat: 45.803276648111506, lng: 15.9024145 }]} />
+          <Picture src="/BimbaShop.jpg" style={styles.Image} />
+        </section>
+      </div>
+    </div>
   );
 };
 

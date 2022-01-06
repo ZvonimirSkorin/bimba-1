@@ -5,7 +5,7 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
   return (
     <div
       className={styles.Wrapper}
-      style={{ width: "100%", overflow: "hidden", backgroundColor: "#f5f5f5", display: "flex", flexDirection: "column" }}
+      style={{ width: "100%", overflow: "hidden", backgroundColor: "#EAF6FF", display: "flex", flexDirection: "column" }}
     >
       <h1>{title}</h1>
       <TextField

@@ -11,11 +11,11 @@ import { useWindowWidth } from "@react-hook/window-size";
 import { useMemo } from "react";
 
 const links = [
-  { link: "/", label: "Pocetna" },
+  { link: "/", label: "Početna" },
   { link: "/about", label: "O nama" },
   { link: "/services", label: "Usluge" },
   { link: "/contact", label: "Kontakt" },
-  { link: "/reserve", label: "Rezerviraj" },
+  { link: "/reserve", label: "Rezervacije" },
 ];
 
 function Navigation() {
@@ -43,7 +43,7 @@ function Navigation() {
   const router = useRouter();
 
   return (
-    <nav style={activateScroll ? { backgroundColor: "#a9b3d1", transition: "0.5s" } : { transition: "0.5s" }} className={styles.nav}>
+    <nav style={activateScroll ? { backgroundColor: "rgb(213 237 255)", transition: "0.5s" } : { transition: "0.5s" }} className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.navContent}>
           <div
