@@ -55,7 +55,7 @@ function Navigation() {
               activateScroll ? { height: iconSize.height, width: iconSize.width } : { height: iconSize.height * 1.6, width: iconSize.width * 1.6 }
             }
           >
-            <Image src="/Bimba.svg" alt="" layout="fill" objectFit="contain" />
+            <Image src="/bimba.svg" alt="" layout="fill" objectFit="contain" />
           </div>
 
           <div className={styles.navLinks}>
