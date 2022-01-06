@@ -11,8 +11,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Bimba | O nama</title>
-        <link rel="shortcut icon" href="/bimba.svg" />
+        <title>O nama | Bimba</title>
+        
       </Head>
 
       <AboutHeader />

@@ -22,10 +22,12 @@
     filter: brightness(50%);
     transform:scale(1.2);
     opacity: 0;
-animation: anim 1s ease forwards;
+    animation: anim 1s ease forwards;
+
     @media screen and (max-width:600px) {
-        background-position: right;
+        background-position: center;
     }
+    
     background:url("/services.jpg") no-repeat left top;
     filter:brightness(0.9);
     background-size:cover;
@@ -106,7 +108,8 @@ opacity: 1;
     display: flex;
     width:100%;
     margin:0 auto;
-justify-content: center;
+    justify-content: center;
+
     @media screen and (max-width:530px) {
         flex-direction: column;
         align-items: center;
