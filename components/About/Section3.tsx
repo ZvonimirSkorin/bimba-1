@@ -8,6 +8,7 @@ export const Section3: React.FC = () => {
       <section className={styles.ImageWrapper}>
         <strong className={styles.BackgroundColor}></strong>
         <Picture
+          priority
           src="/Puppy.jpg"
           style={styles.Image}
           svg={

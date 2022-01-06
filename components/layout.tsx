@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { ReactChildren } from "react";
+import { TailWave } from "./Loaders/TailWave";
 import Navbar from "./navigation";
 import { Footer } from "./SharedComponents/Footer";
 import { HorizontalLoader, Loader } from "./SharedComponents/Loader";
