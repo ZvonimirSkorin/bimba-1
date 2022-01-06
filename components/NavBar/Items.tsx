@@ -11,7 +11,6 @@ const Items: React.FC = () => {
     { link: "/services", label: "Usluge" },
     { link: "/contact", label: "Kontakt" },
     { link: "/reserve", label: "Rezerviraj" },
-    { link: "/galery", label: "Galerija" },
   ];
 
   return (
