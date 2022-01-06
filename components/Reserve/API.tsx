@@ -1,16 +1,27 @@
+import axios from "axios";
+interface Data {
+  data: {};
+  datum: string;
+}
+
 export const getFreeAppointments = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let arr = [
-        { start: 830, duration: 30 },
-        { start: 930, duration: 30 },
-        { start: 1030, duration: 30 },
-        { start: 1130, duration: 30 },
-      ].sort((a, b) => {
-        return a.start - b.start;
+    axios
+      .get("http://localhost:3000/api/GetFreeAppointments")
+      .then((result) => {
+        const date = result.data.datum;
+        const arr: any[] = [];
+        result.data.data[date]?.forEach((v: { start: number; duration: number }) => {
+          console.log(v);
+          arr.push(v);
+        });
+        console.log(arr);
+        resolve(arr);
+      })
+      .catch((err) => {
+        console.log(err);
+        resolve(null);
       });
-      resolve(arr);
-    }, 1000);
   });
 };
 
