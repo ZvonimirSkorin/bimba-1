@@ -40,13 +40,11 @@ export const Drawer: React.FC<recivedProps> = ({ open, setOpen, items }) => {
             </div>
           );
         })}
-<<<<<<< HEAD
+
         <div className={styles.img} style={{ height: 150, width: 150, position: "relative", marginTop: "10%" }}>
           <Image src="/bimba.svg" alt="" layout="fill" objectFit="contain" />
         </div>
-=======
-        <img src="/Bimba.svg" className={styles.img} style={{ height: 150, width: 150, position: "relative", marginTop: "10%" }} />
->>>>>>> eb4aa9405d4ef5bd37137e6bcc03944ba07a05b0
+
       </section>
     </div>
   );
