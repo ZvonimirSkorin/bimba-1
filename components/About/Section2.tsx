@@ -4,7 +4,7 @@ export const Section2: React.FC = () => {
   return (
     <div id="Usluge" className={styles.Wrapper}>
       <section className={styles.ImgWrapper}>
-        <Image alt="" src="/Cat.jpg" layout="fill" objectFit="cover" />
+        <Image alt="" src="/Cat.jpg" layout="fill" objectFit="cover" priority />
       </section>
 
       <section className={styles.Box}>

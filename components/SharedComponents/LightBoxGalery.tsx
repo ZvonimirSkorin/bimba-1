@@ -12,6 +12,7 @@ interface recivedData {
 export const LightBoxGalery: React.FC<recivedData> = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState<number>(-1);
+
   useEffect(() => {
     if (props.start_position === -1) {
       return;

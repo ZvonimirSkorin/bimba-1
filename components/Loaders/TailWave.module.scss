@@ -1,0 +1,44 @@
+.Loader{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background:rgb(234, 246, 255);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: removeAnim 1s ease forwards 1s;
+
+}
+
+.Dog{
+    width:90%;
+    margin:0 auto;
+    max-width:500px;
+}
+
+.Tail{
+    transform-origin: bottom left;
+animation: Wave 0.8s ease forwards infinite;
+}
+@keyframes Wave {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform:  skew(2deg);
+        
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: skew(-2deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
+}
