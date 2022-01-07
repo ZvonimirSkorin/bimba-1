@@ -2,6 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = any
+const val = process.env.pass
 
 export default function handler(
   req: NextApiRequest,
@@ -15,7 +16,7 @@ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   auth: {
     user: 'winteragency01@gmail.com',
-    pass: process.env.pass,
+    pass: val,
   },
   secure: true,
 })
