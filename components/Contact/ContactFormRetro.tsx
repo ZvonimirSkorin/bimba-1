@@ -31,7 +31,7 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
         onChange={(e) => {
           sender.current = e.currentTarget.value;
         }}
-        style={{ width: "100%", maxWidth: "700px", fontSize: "2rem", marginTop: "1rem" }}
+        style={{ width: "100%", maxWidth: "500px", fontSize: "2rem", marginTop: "1rem" }}
       />
 
       <TextField
@@ -41,7 +41,7 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
         onChange={(e) => {
           number.current = e.currentTarget.value;
         }}
-        style={{ width: "100%", maxWidth: "700px", fontSize: "2rem", marginTop: "1rem" }}
+        style={{ width: "100%", maxWidth: "500px", fontSize: "2rem", marginTop: "1rem" }}
       />
       <TextField
         id="standard-basic"
@@ -50,10 +50,10 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
         onChange={(e) => {
           mail.current = e.currentTarget.value;
         }}
-        style={{ width: "100%", maxWidth: "700px", fontSize: "2rem", marginTop: "1rem" }}
+        style={{ width: "100%", maxWidth: "500px", fontSize: "2rem", marginTop: "1rem" }}
       />
 
-      <textarea
+      <textarea style={{ width: "100%", maxWidth: "500px" }}
         onChange={(e) => {
           message.current = e.currentTarget.value;
         }}
@@ -62,13 +62,13 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
       ></textarea>
       <div
         className={`${styles.buttonFill} ${styles.reverse}`}
-        style={{ borderColor: "#242A56", color: "#242A56", marginRight: "auto", marginTop: "2rem", zIndex: 10 }}
+        style={{ borderColor: "#999", color: "#333", marginRight: "auto", marginTop: "2rem", zIndex: 10 }}
         onClick={() => {
           SendMail({ sender: sender.current, mail: mail.current, message: message.current, number: number.current }, setAlert);
         }}
       >
         Send
-        <div className={styles.hiddenWave} style={{ backgroundColor: "black", color: "white", marginRight: "auto" }}></div>
+        <div className={styles.hiddenWave} ></div>
       </div>
       <AlertMessage alert={alert} />
     </div>

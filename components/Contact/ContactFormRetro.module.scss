@@ -17,7 +17,7 @@
     border-width: 0.4px;
     height: 200px;
     border-style: none;
-    box-shadow: 0px 0px 2px 0px black;
+    box-shadow: 0px 0px 2px 0px #9da8b1;
     margin-top: 2rem;
 }
 
@@ -27,6 +27,8 @@
     padding:1rem;
     max-width: 100%;
     box-sizing: border-box;
+    margin-bottom:10rem;
+
     @media screen and (min-width:800px) {
         padding:2rem;
     }
@@ -37,7 +39,7 @@
 }
 
 .buttonFill{
-    padding:0.8rem 1.5rem;
+    padding:1rem 3rem;
     border-style: solid;
     color:white;
     font-weight: 700;
@@ -46,11 +48,12 @@
     gap:0.5rem;
     
   font-size: 1rem;
-  border-radius: 0.4rem;
+  
   cursor: pointer;
   overflow: hidden;
   position: relative;
   transition-duration: 0.3s;
+  
   &:hover{
     color:white;
 }
@@ -80,7 +83,7 @@
     z-index: -1;
     top:0;
     left:0;
-    background-color: black;
+    background-color: #90cfff;
     transform: translateY(120%) rotate(-5deg);
     transition-duration: 0.4s;
     

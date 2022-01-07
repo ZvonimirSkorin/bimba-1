@@ -12,25 +12,44 @@ const Contact: NextPage = () => {
     { ssr: false } // This line is important. It's what prevents server-side render
   );
   return (
-    <div style={{background:"#EAF6FF"}}>
+    <>
       <Head>
         <title>Kontakt | Bimba</title>
         <link rel="shortcut icon" href="/bimba.svg" />
       </Head>
-      <ContactHeader />
+      
+      <div style={{background:"#EAF6FF",position:"relative"}}>
+        <ContactHeader />
 
-      <div style={{width:"80%",margin:"auto"}}>
-        <section className={styles.ContentWrapper} style={{ backgroundColor: "#EAF6FF" }}>
-          <ContactFormRetro title="Imate pitanje?" />
-          <ContactInfo />
-        </section>
+        <div style={{width:"80%",margin:"auto"}}>
 
-        <section className={styles.MapWrapper}>
-          <Map ZoomIn={17} open={"Bimba"} zIndex={true} koordinate={[{ city: "Bimba", lat: 45.803276648111506, lng: 15.9024145 }]} />
-          <Picture src="/BimbaShop.JPG" style={styles.Image} />
-        </section>
+          <section className={styles.ContentWrapper} style={{ backgroundColor: "#EAF6FF" }}>
+            <ContactFormRetro title="Imate pitanje?" />
+
+            <ContactInfo />
+
+          </section>
+        </div>
+        <svg className={styles.BottomShape} width="100%" viewBox="0 0 765 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 82.5V1.5C302.248 103.34 469.591 105.27 764.5 1.5V82.5H0.5Z" fill="white" stroke="white" />
+          </svg>
       </div>
-    </div>
+         
+      <div style={{position:"relative"}}>
+        <div style={{width:"80%",margin:"auto"}}>
+
+          <section className={styles.MapWrapper}>
+            <Map ZoomIn={17} open={"Bimba"} zIndex={true} koordinate={[{ city: "Bimba", lat: 45.803276648111506, lng: 15.9024145 }]} />
+            <Picture src="/BimbaShop.JPG" style={styles.Image} />
+          </section>
+
+        </div>
+        <svg className={styles.BottomShape} width="100%" viewBox="0 0 765 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 82.5V1.5C302.248 103.34 469.591 105.27 764.5 1.5V82.5H0.5Z" fill="#EAF6FF" stroke="#EAF6FF" />
+        </svg>
+      </div>
+      </>
+    
   );
 };
 
