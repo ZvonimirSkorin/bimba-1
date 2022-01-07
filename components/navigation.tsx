@@ -15,7 +15,6 @@ const links = [
   { link: "/about", label: "O nama" },
   { link: "/services", label: "Usluge" },
   { link: "/contact", label: "Kontakt" },
-  { link: "/reserve", label: "Rezervacije" },
 ];
 
 function Navigation() {
