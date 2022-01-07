@@ -15,7 +15,7 @@ export const SendMail = (obj: mail, setAlert: Function) => {
     return;
   }
   axios
-    .post("http://localhost:3000/api/SendMail", obj)
+    .post("http://bimba.vercel.app/api/SendMail", obj)
     .then(() => {
       setAlert({ type: 1, message: "Uspješno poslan mail" });
     })
