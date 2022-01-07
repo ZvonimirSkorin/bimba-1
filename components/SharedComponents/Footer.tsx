@@ -2,6 +2,7 @@ import styles from "./footer.module.scss";
 import { Picture } from "./Image";
 import Typewriter from "typewriter-effect";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import { useRouter } from "next/router";
 
 export const Footer: React.FC = () => {
   return (
@@ -30,13 +31,28 @@ export const Footer: React.FC = () => {
 };
 
 const Box: React.FC = () => {
+  const router = useRouter();
+  const ItemsList = [
+    { link: "/", label: "Početna" },
+    { link: "/about", label: "O nama" },
+    { link: "/services", label: "Usluge" },
+    { link: "/contact", label: "Kontakt" },
+  ];
   return (
     <article className={styles.Article}>
       <h3>Informacije</h3>
-      <strong>O nama</strong>
-      <strong>Usluge</strong>
-      <strong>Kontakt</strong>
-      <strong>O nama</strong>
+      {ItemsList.map((v, index) => {
+        return (
+          <strong
+            onClick={() => {
+              router.push(v.link);
+            }}
+            key={index}
+          >
+            {v.label}
+          </strong>
+        );
+      })}
     </article>
   );
 };

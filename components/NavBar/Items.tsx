@@ -10,7 +10,6 @@ const Items: React.FC = () => {
     { link: "/about", label: "O nama" },
     { link: "/services", label: "Usluge" },
     { link: "/contact", label: "Kontakt" },
-    { link: "/reserve", label: "Rezerviraj" },
   ];
 
   return (

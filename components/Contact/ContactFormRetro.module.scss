@@ -85,3 +85,59 @@
     transition-duration: 0.4s;
     
     }
+
+
+    .Good{
+      position:fixed;
+      max-width: 90%;
+      width:500px;
+      background-color: green;
+      color:white;
+      bottom:1rem;
+      left:50%;
+      transform: translate(-50%,200%);
+      animation: animMessage 8s ease-in;
+      z-index:10000;
+      text-align: center;
+      padding:1rem;
+    }
+    .Bad{
+      position:fixed;
+      max-width: 90%;
+      width:500px;
+      z-index:10000;
+      background-color: red;
+      color:white;
+      bottom:1rem;
+      left:50%;
+      transform: translate(-50%,200%);
+      animation: animMessage 8s ease-out;
+      text-align: center;
+      padding:1rem;
+    }
+    .Warning{
+      z-index:10000;
+      position:fixed;
+      max-width: 90%;
+      width:500px;
+      background-color: orange;
+      text-align: center;
+      padding:1rem;
+      color:white;
+      bottom:1rem;
+      left:50%;
+      transform: translate(-50%,200%);
+      animation: animMessage 8s ease forwards;
+    }
+
+    @keyframes animMessage {
+      20%{
+        transform: translate(-50%,0);
+      }
+      80%{
+        transform: translate(-50%,0);
+      }
+      100%{
+        transform: translate(-50%,200%);
+      }
+    }
