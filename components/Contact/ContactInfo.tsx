@@ -5,7 +5,7 @@ import styles from "./ContactInfo.module.scss";
 const ContactInfo: React.FC = () => {
   return (
     <div className={styles.ContactInfo}>
-      <h1 className={styles.H1}>Contact info</h1>
+      <h1 className={styles.H1}>Kontaktirajte nas</h1>
       <div className={styles.ContentWrapper}>
         <section className={styles.CardWrapper}>
           <Card icon={faMapPin} first="Ul. Dobriše Cesarića 6, 10000, Zagreb" action="Direction" />

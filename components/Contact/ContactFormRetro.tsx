@@ -24,10 +24,12 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
       style={{ width: "100%", overflow: "hidden", backgroundColor: "#EAF6FF", display: "flex", flexDirection: "column" }}
     >
       <h1>{title}</h1>
+      <h2 className={styles.h2}>Pošaljite upit</h2>
       <TextField
         id="standard-basic"
         label="Name*"
         variant="standard"
+        
         onChange={(e) => {
           sender.current = e.currentTarget.value;
         }}
@@ -62,7 +64,7 @@ const ContactFormRetro: React.FC<{ title: string }> = ({ title }) => {
       ></textarea>
       <div
         className={`${styles.buttonFill} ${styles.reverse}`}
-        style={{ borderColor: "#999", color: "#333", marginRight: "auto", marginTop: "2rem", zIndex: 10 }}
+        style={{marginRight: "auto", marginTop: "2rem", zIndex: 10 }}
         onClick={() => {
           SendMail({ sender: sender.current, mail: mail.current, message: message.current, number: number.current }, setAlert);
         }}
